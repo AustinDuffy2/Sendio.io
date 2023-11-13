@@ -3,7 +3,7 @@ import { Meta, Story } from "@storybook/react";
 import { Button as ButtonComponent, Img } from "components";
 
 export default {
-  title: "austin_s_application13/Buttons",
+  title: "sendio/Buttons",
   component: ButtonComponent,
   argTypes: {
     children: { control: "text" },

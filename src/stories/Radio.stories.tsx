@@ -3,7 +3,7 @@ import { Radio } from "components";
 import { Meta, Story } from "@storybook/react";
 
 export default {
-  title: "austin_s_application13/Radio",
+  title: "sendio/Radio",
   component: Radio,
 };
 
