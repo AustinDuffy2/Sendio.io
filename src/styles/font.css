@@ -1,0 +1,9 @@
+
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/RobotoRegular.ttf"); font-family : "Roboto"; font-weight : 400;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/RobotoCondensedBold.ttf"); font-family : "Roboto Condensed"; font-weight : 700;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/WorkSansRegular.ttf"); font-family : "Work Sans"; font-weight : 400;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/DarkerGrotesqueBold.ttf"); font-family : "Darker Grotesque"; font-weight : 700;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/DarkerGrotesqueMedium.ttf"); font-family : "Darker Grotesque"; font-weight : 500;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/RobotoBold.ttf"); font-family : "Roboto"; font-weight : 700;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/RobotoMedium.ttf"); font-family : "Roboto"; font-weight : 500;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/RobotoLight.ttf"); font-family : "Roboto"; font-weight : 300;  }
