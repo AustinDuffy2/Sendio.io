@@ -33,13 +33,13 @@ const HomeTestimonial4: React.FC<HomeTestimonial4Props> = (props) => {
               />
               <div className="flex flex-1 flex-col gap-[5px] items-start justify-start w-full">
                 <Text
-                  className="text-base text-black-900 w-full"
+                  className="flex md:justify-center justify-start text-base text-black-900 w-full"
                   size="txtRobotoSemiBold16"
                 >
                   {props?.name}
                 </Text>
                 <Text
-                  className="text-base text-black-900 text-center w-full"
+                  className="flex md:justify-center text-base text-black-900 text-center w-full"
                   size="txtRobotoRegular16"
                 >
                   {props?.title}

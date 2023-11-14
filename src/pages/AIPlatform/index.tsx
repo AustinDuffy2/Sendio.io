@@ -26,7 +26,7 @@ const AIPlatformPage: React.FC = () => {
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-roboto sm:gap-10 md:gap-10 gap-[120px] items-start justify-end mx-auto py-10 w-auto sm:w-full md:w-full">
-        <Header className="bg-white-A700 border-b border-black-900 border-solid flex items-center justify-center px-4 md:px-5 py-5 w-full" />
+        <Header className="bg-white-A700 border-b border-black-900 border-solid flex sm:flex-row items-center justify-center px-4 md:px-5 py-5 w-full" />
         <AIPlatformHeader26 className="flex md:flex-col flex-row font-robotocondensed gap-[30px] items-start justify-center pt-5 px-4 w-full" />
         <div className="flex flex-col font-roboto gap-[20.82px] items-center justify-start px-[16.66px] py-[20.82px] w-full">
           <Text

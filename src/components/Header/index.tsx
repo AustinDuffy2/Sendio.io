@@ -12,15 +12,15 @@ const Header: React.FC<HeaderProps> = (props) => {
   return (
     <>
       <header className={props.className}>
-        <div className="flex md:flex-col flex-row gap-8 items-center justify-center w-full">
+        <div className="flex flex-row gap-8 items-center justify-center w-full">
           <Img
-            className="flex-1 h-[25px] max-h-[25px] sm:w-[] md:w-[]"
+            className="sm:block flex-1 sm:flex-col h-[25px] sm:h-[] md:h-[] max-h-[25px] sm:max-h-[] md:max-h-[] md:min-w-0"
             src="images/img_column.svg"
             alt="column"
           />
           <div className="flex flex-row gap-6 items-center justify-center w-auto">
             <Button
-              className="!text-white-A700 cursor-pointer font-roboto min-w-[88px] text-base text-center"
+              className="!text-white-A700 cursor-pointer flex font-roboto sm:hidden min-w-[88px] text-base text-center"
               shape="round"
               color="light_blue_500"
               size="md"

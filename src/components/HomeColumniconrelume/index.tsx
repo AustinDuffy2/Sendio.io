@@ -82,7 +82,7 @@ const HomeColumniconrelume: React.FC<HomeColumniconrelumeProps> = (props) => {
                   </Text>
                 </div>
                 <Img
-                  className="absolute h-[23px] inset-y-[0] my-auto right-[0] w-[23px]"
+                  className="absolute h-[23px] hidden inset-y-[0] my-auto right-[0] w-[23px]"
                   src="images/img_iconrelume.svg"
                   alt="folder"
                 />
@@ -129,14 +129,14 @@ const HomeColumniconrelume: React.FC<HomeColumniconrelumeProps> = (props) => {
                   {props?.buttonone1}
                 </Text>
                 <Img
-                  className="h-[23px] w-[23px]"
+                  className="h-[23px] hidden w-[23px]"
                   src="images/img_iconrelume.svg"
                   alt="folder"
                 />
               </div>
             </div>
           </div>
-          <div className="flex flex-1 flex-col gap-[30px] h-[451px] md:h-auto items-center justify-between p-2.5 w-full">
+          <div className="flex flex-1 flex-col gap-[30px] h-[451px] md:h-auto md:hidden items-center justify-between p-2.5 w-full">
             <div className="flex flex-col gap-[23.05px] items-center justify-start w-full">
               <Img
                 className="h-[46px] w-[46px]"
@@ -178,7 +178,7 @@ const HomeColumniconrelume: React.FC<HomeColumniconrelumeProps> = (props) => {
                   </Text>
                 </div>
                 <Img
-                  className="absolute h-[23px] inset-y-[0] my-auto right-[0] w-[23px]"
+                  className="absolute h-[23px] hidden inset-y-[0] my-auto right-[0] w-[23px]"
                   src="images/img_iconrelume.svg"
                   alt="folder"
                 />

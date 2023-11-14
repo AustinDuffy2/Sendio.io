@@ -1,5 +1,7 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import { Img, Text } from "components";
 
 type FooterProps = React.DetailedHTMLProps<
@@ -9,6 +11,8 @@ type FooterProps = React.DetailedHTMLProps<
   Partial<{}>;
 
 const Footer: React.FC<FooterProps> = (props) => {
+  const navigate = useNavigate();
+
   return (
     <>
       <footer className={props.className}>
@@ -99,32 +103,36 @@ const Footer: React.FC<FooterProps> = (props) => {
                   </li>
                   <li>
                     <Text
-                      className="text-base text-black-900"
+                      className="common-pointer text-base text-black-900"
                       size="txtRobotoSemiBold16"
+                      onClick={() => navigate("/aboutus")}
                     >
                       About Us
                     </Text>
                   </li>
                   <li>
                     <Text
-                      className="text-base text-black-900"
+                      className="common-pointer text-base text-black-900"
                       size="txtRobotoSemiBold16"
+                      onClick={() => navigate("/search")}
                     >
                       Property Search
                     </Text>
                   </li>
                   <li>
                     <Text
-                      className="text-base text-black-900"
+                      className="common-pointer text-base text-black-900"
                       size="txtRobotoSemiBold16"
+                      onClick={() => navigate("/propertydetails")}
                     >
                       Property Detail
                     </Text>
                   </li>
                   <li>
                     <Text
-                      className="text-base text-black-900"
+                      className="common-pointer text-base text-black-900"
                       size="txtRobotoSemiBold16"
+                      onClick={() => navigate("/aiplatform")}
                     >
                       AI Platform
                     </Text>
@@ -141,24 +149,27 @@ const Footer: React.FC<FooterProps> = (props) => {
                   </li>
                   <li>
                     <Text
-                      className="text-base text-black-900"
+                      className="common-pointer text-base text-black-900"
                       size="txtRobotoSemiBold16"
+                      onClick={() => navigate("/contact")}
                     >
                       Contact Us
                     </Text>
                   </li>
                   <li>
                     <Text
-                      className="text-base text-black-900"
+                      className="common-pointer text-base text-black-900"
                       size="txtRobotoSemiBold16"
+                      onClick={() => navigate("/loginscreen")}
                     >
                       Sign In
                     </Text>
                   </li>
                   <li>
                     <Text
-                      className="text-base text-black-900"
+                      className="common-pointer text-base text-black-900"
                       size="txtRobotoSemiBold16"
+                      onClick={() => navigate("/signupscreen")}
                     >
                       Sign Up
                     </Text>
