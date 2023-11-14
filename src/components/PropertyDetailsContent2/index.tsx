@@ -4,13 +4,13 @@ import { Img, Text } from "components";
 
 type PropertyDetailsContent2Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  | "headingThree"
+  | "headingthree"
   | "descriptiontext"
   | "descriptiononetext"
   | "descriptiontwotext"
 > &
   Partial<{
-    headingThree: string;
+    headingthree: string;
     descriptiontext: string;
     descriptiononetext: string;
     descriptiontwotext: string;
@@ -27,7 +27,7 @@ const PropertyDetailsContent2: React.FC<PropertyDetailsContent2Props> = (
             className="text-5xl sm:text-[38px] md:text-[44px] text-black-900 w-full"
             size="txtRobotoCondensedBold48"
           >
-            {props?.headingThree}
+            {props?.headingthree}
           </Text>
           <div className="flex flex-col items-start justify-start w-full">
             <div className="flex flex-col items-start justify-start pb-4 w-full">
@@ -57,9 +57,9 @@ const PropertyDetailsContent2: React.FC<PropertyDetailsContent2Props> = (
           </div>
         </div>
         <Img
-          className="flex-1 md:h-auto object-cover w-[0]"
+          className="flex-1 h-[500px] md:h-auto object-cover w-full"
           src="images/img_heroanimation.png"
-          alt="heroanimation_One"
+          alt="heroanimationon"
         />
       </div>
     </>
@@ -67,7 +67,7 @@ const PropertyDetailsContent2: React.FC<PropertyDetailsContent2Props> = (
 };
 
 PropertyDetailsContent2.defaultProps = {
-  headingThree: "Property Overview",
+  headingthree: "Property Overview",
   descriptiontext:
     "Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque amet nulla purus habitasse.",
   descriptiononetext:

@@ -7,22 +7,22 @@ type AboutUsContact15Props = Omit<
   | "tagline"
   | "contactusheading"
   | "contactustext"
-  | "heading"
-  | "email"
-  | "heading1"
+  | "emailheading"
+  | "emailaddress"
+  | "phoneheading"
   | "phonenumber"
-  | "heading2"
+  | "officeheading"
   | "officeaddress"
 > &
   Partial<{
     tagline: string;
     contactusheading: string;
     contactustext: string;
-    heading: string;
-    email: string;
-    heading1: string;
+    emailheading: string;
+    emailaddress: string;
+    phoneheading: string;
     phonenumber: string;
-    heading2: string;
+    officeheading: string;
     officeaddress: string;
   }>;
 
@@ -66,13 +66,13 @@ const AboutUsContact15: React.FC<AboutUsContact15Props> = (props) => {
                   className="text-black-900 text-xl w-full"
                   size="txtRobotoBold20"
                 >
-                  {props?.heading}
+                  {props?.emailheading}
                 </Text>
                 <Text
                   className="text-base text-black-900 underline w-full"
                   size="txtRobotoRegular16"
                 >
-                  {props?.email}
+                  {props?.emailaddress}
                 </Text>
               </div>
             </div>
@@ -87,7 +87,7 @@ const AboutUsContact15: React.FC<AboutUsContact15Props> = (props) => {
                   className="text-black-900 text-xl w-full"
                   size="txtRobotoBold20"
                 >
-                  {props?.heading1}
+                  {props?.phoneheading}
                 </Text>
                 <Text
                   className="text-base text-black-900 underline w-full"
@@ -108,7 +108,7 @@ const AboutUsContact15: React.FC<AboutUsContact15Props> = (props) => {
                   className="text-black-900 text-xl w-full"
                   size="txtRobotoBold20"
                 >
-                  {props?.heading2}
+                  {props?.officeheading}
                 </Text>
                 <Text
                   className="text-base text-black-900 w-full"
@@ -121,9 +121,9 @@ const AboutUsContact15: React.FC<AboutUsContact15Props> = (props) => {
           </List>
         </div>
         <Img
-          className="flex-1 md:h-auto object-cover w-[0]"
+          className="flex-1 h-[500px] md:h-auto object-cover w-full"
           src="images/img_heroanimation.png"
-          alt="heroanimation_One"
+          alt="heroanimationon"
         />
       </div>
     </>
@@ -135,11 +135,11 @@ AboutUsContact15.defaultProps = {
   contactusheading: "Contact us",
   contactustext:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-  heading: "Email",
-  email: "hello@relume.io",
-  heading1: "Phone",
+  emailheading: "Email",
+  emailaddress: "hello@relume.io",
+  phoneheading: "Phone",
   phonenumber: "+1 (555) 000-0000",
-  heading2: "Office",
+  officeheading: "Office",
   officeaddress: "123 Sample St, Sydney NSW 2000 AU",
 };
 

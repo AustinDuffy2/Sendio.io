@@ -4,32 +4,32 @@ import { Button, Img, Line, List, Text } from "components";
 
 type AIPlatformLayout121Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  | "subheadingone"
-  | "headingtwo"
-  | "searchone"
+  | "subheadingtext"
+  | "searchtext"
+  | "searchbutton"
   | "buttontwo"
-  | "inputcriteriaheading"
-  | "inputcriteriatext"
-  | "receivesuggestionsheading"
-  | "receivesuggestionstext"
-  | "exploreoptionsheading"
-  | "exploreoptionstext"
-  | "makeinformeddecisionsheading"
-  | "makeinformeddecisionstext"
+  | "heading"
+  | "text"
+  | "heading1"
+  | "text1"
+  | "heading2"
+  | "text2"
+  | "heading3"
+  | "descriptiontext"
 > &
   Partial<{
-    subheadingone: string;
-    headingtwo: string;
-    searchone: string;
+    subheadingtext: string;
+    searchtext: string;
+    searchbutton: string;
     buttontwo: string;
-    inputcriteriaheading: string;
-    inputcriteriatext: JSX.Element | string;
-    receivesuggestionsheading: string;
-    receivesuggestionstext: string;
-    exploreoptionsheading: string;
-    exploreoptionstext: string;
-    makeinformeddecisionsheading: string;
-    makeinformeddecisionstext: string;
+    heading: string;
+    text: JSX.Element | string;
+    heading1: string;
+    text1: string;
+    heading2: string;
+    text2: string;
+    heading3: string;
+    descriptiontext: string;
   }>;
 
 const AIPlatformLayout121: React.FC<AIPlatformLayout121Props> = (props) => {
@@ -43,13 +43,13 @@ const AIPlatformLayout121: React.FC<AIPlatformLayout121Props> = (props) => {
                 className="text-base text-black-900 w-auto"
                 size="txtRobotoSemiBold16"
               >
-                {props?.subheadingone}
+                {props?.subheadingtext}
               </Text>
               <Text
                 className="leading-[120.00%] max-w-[664px] md:max-w-full text-5xl sm:text-[38px] md:text-[44px] text-black-900"
                 size="txtRobotoCondensedBold48"
               >
-                {props?.headingtwo}
+                {props?.searchtext}
               </Text>
             </div>
             <div className="flex flex-row gap-6 items-center justify-start pt-4 w-auto">
@@ -60,7 +60,7 @@ const AIPlatformLayout121: React.FC<AIPlatformLayout121Props> = (props) => {
                 size="md"
                 variant="fill"
               >
-                {props?.searchone}
+                {props?.searchbutton}
               </Button>
               <div className="flex flex-row gap-2 items-center justify-center rounded-[10px] shadow-bs w-auto">
                 <Text
@@ -72,7 +72,7 @@ const AIPlatformLayout121: React.FC<AIPlatformLayout121Props> = (props) => {
                 <Img
                   className="h-6 w-6"
                   src="images/img_iconrelume.svg"
-                  alt="folder_One"
+                  alt="folderone"
                 />
               </div>
             </div>
@@ -96,13 +96,13 @@ const AIPlatformLayout121: React.FC<AIPlatformLayout121Props> = (props) => {
                     className="text-black-900 text-xl w-full"
                     size="txtRobotoBold20"
                   >
-                    {props?.inputcriteriaheading}
+                    {props?.heading}
                   </Text>
                   <Text
                     className="text-base text-black-900 w-full"
                     size="txtRobotoRegular16"
                   >
-                    {props?.inputcriteriatext}
+                    {props?.text}
                   </Text>
                 </div>
               </div>
@@ -120,13 +120,13 @@ const AIPlatformLayout121: React.FC<AIPlatformLayout121Props> = (props) => {
                     className="text-black-900 text-xl w-full"
                     size="txtRobotoBold20"
                   >
-                    {props?.receivesuggestionsheading}
+                    {props?.heading1}
                   </Text>
                   <Text
                     className="text-base text-black-900 w-full"
                     size="txtRobotoRegular16"
                   >
-                    {props?.receivesuggestionstext}
+                    {props?.text1}
                   </Text>
                 </div>
               </div>
@@ -144,13 +144,13 @@ const AIPlatformLayout121: React.FC<AIPlatformLayout121Props> = (props) => {
                     className="text-black-900 text-xl w-full"
                     size="txtRobotoBold20"
                   >
-                    {props?.exploreoptionsheading}
+                    {props?.heading2}
                   </Text>
                   <Text
                     className="text-base text-black-900 w-full"
                     size="txtRobotoRegular16"
                   >
-                    {props?.exploreoptionstext}
+                    {props?.text2}
                   </Text>
                 </div>
               </div>
@@ -167,13 +167,13 @@ const AIPlatformLayout121: React.FC<AIPlatformLayout121Props> = (props) => {
                     className="text-black-900 text-xl w-full"
                     size="txtRobotoBold20"
                   >
-                    {props?.makeinformeddecisionsheading}
+                    {props?.heading3}
                   </Text>
                   <Text
                     className="leading-[150.00%] md:max-w-full max-w-xl text-base text-black-900"
                     size="txtRobotoRegular16"
                   >
-                    {props?.makeinformeddecisionstext}
+                    {props?.descriptiontext}
                   </Text>
                 </div>
               </div>
@@ -186,24 +186,24 @@ const AIPlatformLayout121: React.FC<AIPlatformLayout121Props> = (props) => {
 };
 
 AIPlatformLayout121.defaultProps = {
-  subheadingone: "Revolutionize",
-  headingtwo: "Streamline Your Property Search with AI",
-  searchone: "Search",
+  subheadingtext: "Revolutionize",
+  searchtext: "Streamline Your Property Search with AI",
+  searchbutton: "Search",
   buttontwo: "Discover",
-  inputcriteriaheading: "Input Criteria",
-  inputcriteriatext: (
+  heading: "Input Criteria",
+  text: (
     <>
       Tell us what you&#39;re looking for and let our AI platform do the rest.
     </>
   ),
-  receivesuggestionsheading: "Receive Suggestions",
-  receivesuggestionstext:
+  heading1: "Receive Suggestions",
+  text1:
     "Get personalized property suggestions based on your criteria and preferences.",
-  exploreoptionsheading: "Explore Options",
-  exploreoptionstext:
+  heading2: "Explore Options",
+  text2:
     "Browse through a wide range of properties that match your requirements.",
-  makeinformeddecisionsheading: "Make Informed Decisions",
-  makeinformeddecisionstext:
+  heading3: "Make Informed Decisions",
+  descriptiontext:
     "Access detailed property information and make confident choices for your next investment.",
 };
 

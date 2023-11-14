@@ -2,10 +2,10 @@ import React from "react";
 
 import { Button, Text } from "components";
 
-type PropertyDetailsColumnheadingTwoProps = Omit<
+type PropertyDetailsColumnheadingtwoProps = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  | "headingTwo"
-  | "textOne"
+  | "headingtwo"
+  | "textone"
   | "waterfrontlabel"
   | "luxurylabel"
   | "exclusivelabel"
@@ -19,8 +19,8 @@ type PropertyDetailsColumnheadingTwoProps = Omit<
   | "websiteurl"
 > &
   Partial<{
-    headingTwo: string;
-    textOne: string;
+    headingtwo: string;
+    textone: string;
     waterfrontlabel: string;
     luxurylabel: string;
     exclusivelabel: string;
@@ -34,8 +34,8 @@ type PropertyDetailsColumnheadingTwoProps = Omit<
     websiteurl: string;
   }>;
 
-const PropertyDetailsColumnheadingTwo: React.FC<
-  PropertyDetailsColumnheadingTwoProps
+const PropertyDetailsColumnheadingtwo: React.FC<
+  PropertyDetailsColumnheadingtwoProps
 > = (props) => {
   return (
     <>
@@ -47,13 +47,13 @@ const PropertyDetailsColumnheadingTwo: React.FC<
                 className="md:text-5xl sm:text-[42px] text-[56px] text-black-900 w-full"
                 size="txtRobotoCondensedBold56"
               >
-                {props?.headingTwo}
+                {props?.headingtwo}
               </Text>
               <Text
                 className="text-black-900 text-lg w-full"
                 size="txtRobotoRegular18"
               >
-                {props?.textOne}
+                {props?.textone}
               </Text>
             </div>
             <div className="flex flex-row gap-2 items-start justify-start w-full">
@@ -152,9 +152,9 @@ const PropertyDetailsColumnheadingTwo: React.FC<
   );
 };
 
-PropertyDetailsColumnheadingTwo.defaultProps = {
-  headingTwo: "Luxury Condo Project",
-  textOne:
+PropertyDetailsColumnheadingtwo.defaultProps = {
+  headingtwo: "Luxury Condo Project",
+  textone:
     "Experience modern living at its finest in this luxurious waterfront condominium.",
   waterfrontlabel: "Waterfront",
   luxurylabel: "Luxury",
@@ -169,4 +169,4 @@ PropertyDetailsColumnheadingTwo.defaultProps = {
   websiteurl: "www.luxurycondos.com",
 };
 
-export default PropertyDetailsColumnheadingTwo;
+export default PropertyDetailsColumnheadingtwo;

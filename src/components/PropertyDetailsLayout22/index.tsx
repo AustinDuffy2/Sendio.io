@@ -4,13 +4,13 @@ import { Button, Img, Text } from "components";
 
 type PropertyDetailsLayout22Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  "headingtext" | "descriptiontext" | "learnmoretext" | "buttononetext"
+  "headingtext" | "descriptiontext" | "learnmorebuttontext" | "signupbuttontext"
 > &
   Partial<{
     headingtext: string;
     descriptiontext: string;
-    learnmoretext: string;
-    buttononetext: string;
+    learnmorebuttontext: string;
+    signupbuttontext: string;
   }>;
 
 const PropertyDetailsLayout22: React.FC<PropertyDetailsLayout22Props> = (
@@ -50,14 +50,14 @@ const PropertyDetailsLayout22: React.FC<PropertyDetailsLayout22Props> = (
                 size="md"
                 variant="fill"
               >
-                {props?.learnmoretext}
+                {props?.learnmorebuttontext}
               </Button>
               <div className="flex flex-row gap-2 items-center justify-center rounded-[10px] shadow-bs w-auto">
                 <Text
                   className="text-base text-black-900 w-auto"
                   size="txtRobotoRegular16"
                 >
-                  {props?.buttononetext}
+                  {props?.signupbuttontext}
                 </Text>
                 <Img
                   className="h-6 w-6"
@@ -69,7 +69,7 @@ const PropertyDetailsLayout22: React.FC<PropertyDetailsLayout22Props> = (
           </div>
         </div>
         <Img
-          className="flex-1 md:h-auto object-cover w-[0]"
+          className="flex-1 h-[500px] md:h-auto object-cover w-full"
           src="images/img_heroanimation.png"
           alt="heroanimation"
         />
@@ -82,8 +82,8 @@ PropertyDetailsLayout22.defaultProps = {
   headingtext: "Key Features of the Property",
   descriptiontext:
     "Discover the amazing amenities, nearby facilities, and investment potential of this property.",
-  learnmoretext: "Learn More",
-  buttononetext: "Sign Up",
+  learnmorebuttontext: "Learn More",
+  signupbuttontext: "Sign Up",
 };
 
 export default PropertyDetailsLayout22;

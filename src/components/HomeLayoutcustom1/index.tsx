@@ -84,7 +84,7 @@ const HomeLayoutcustom1: React.FC<HomeLayoutcustom1Props> = (props) => {
             }
             size="xs"
           >
-            <div className="font-bold font-roboto justify-end text-gray-400 text-left text-xl">
+            <div className="font-bold font-roboto text-gray-400 text-left text-xl">
               {props?.exploreAll}
             </div>
           </Button>
@@ -176,7 +176,7 @@ const HomeLayoutcustom1: React.FC<HomeLayoutcustom1Props> = (props) => {
                         <Img
                           className="h-5 w-5"
                           src="images/img_minimize_20x20.svg"
-                          alt="minimize_One"
+                          alt="minimizeone"
                         />
                         <Text
                           className="text-base text-gray-400 w-auto"
@@ -275,7 +275,7 @@ const HomeLayoutcustom1: React.FC<HomeLayoutcustom1Props> = (props) => {
                         <Img
                           className="h-5 w-5"
                           src="images/img_minimize_1.svg"
-                          alt="minimize_One"
+                          alt="minimizeone"
                         />
                         <Text
                           className="text-base text-gray-400 w-auto"
@@ -308,7 +308,7 @@ const HomeLayoutcustom1: React.FC<HomeLayoutcustom1Props> = (props) => {
             </div>
             <div className="flex flex-1 flex-col items-start justify-start rounded-[10px] shadow-bs2 w-full">
               <Img
-                className="md:flex h-[260px] md:h-auto object-cover rounded-tl-[10px] rounded-tr-[10px] w-full"
+                className="h-[260px] md:h-auto object-cover rounded-tl-[10px] rounded-tr-[10px] w-full"
                 src="images/img_image.png"
                 alt="image"
               />
@@ -374,7 +374,7 @@ const HomeLayoutcustom1: React.FC<HomeLayoutcustom1Props> = (props) => {
                         <Img
                           className="h-5 w-5"
                           src="images/img_minimize_2.svg"
-                          alt="minimize_One"
+                          alt="minimizeone"
                         />
                         <Text
                           className="text-base text-gray-400 w-auto"

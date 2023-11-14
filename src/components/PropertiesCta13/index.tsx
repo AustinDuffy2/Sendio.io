@@ -4,13 +4,13 @@ import { Button, Text } from "components";
 
 type PropertiesCta13Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  "headingtext" | "descriptiontext" | "signupbuttontext" | "learnmorebuttontext"
+  "headingthree" | "text" | "signupbutton" | "learnmorebutton"
 > &
   Partial<{
-    headingtext: string;
-    descriptiontext: string;
-    signupbuttontext: string;
-    learnmorebuttontext: string;
+    headingthree: string;
+    text: string;
+    signupbutton: string;
+    learnmorebutton: string;
   }>;
 
 const PropertiesCta13: React.FC<PropertiesCta13Props> = (props) => {
@@ -22,14 +22,14 @@ const PropertiesCta13: React.FC<PropertiesCta13Props> = (props) => {
             className="flex-1 text-5xl sm:text-[38px] md:text-[44px] text-black-900 w-auto"
             size="txtRobotoCondensedBold48"
           >
-            {props?.headingtext}
+            {props?.headingthree}
           </Text>
           <div className="flex flex-1 flex-col gap-6 items-start justify-start w-full">
             <Text
               className="leading-[150.00%] max-w-[664px] md:max-w-full text-black-900 text-lg"
               size="txtRobotoRegular18"
             >
-              {props?.descriptiontext}
+              {props?.text}
             </Text>
             <div className="flex flex-row gap-4 items-start justify-start pt-4 w-full">
               <Button
@@ -39,7 +39,7 @@ const PropertiesCta13: React.FC<PropertiesCta13Props> = (props) => {
                 size="md"
                 variant="fill"
               >
-                {props?.signupbuttontext}
+                {props?.signupbutton}
               </Button>
               <Button
                 className="!text-white-A700 cursor-pointer font-roboto h-11 min-w-[129px] text-base text-center"
@@ -48,7 +48,7 @@ const PropertiesCta13: React.FC<PropertiesCta13Props> = (props) => {
                 size="md"
                 variant="fill"
               >
-                {props?.learnmorebuttontext}
+                {props?.learnmorebutton}
               </Button>
             </div>
           </div>
@@ -59,11 +59,10 @@ const PropertiesCta13: React.FC<PropertiesCta13Props> = (props) => {
 };
 
 PropertiesCta13.defaultProps = {
-  headingtext: "Find Your Dream Property Today",
-  descriptiontext:
-    "Discover a personalized property search experience and gain access to exclusive listings.",
-  signupbuttontext: "Sign Up",
-  learnmorebuttontext: "Learn More",
+  headingthree: "Find Your Dream Property Today",
+  text: "Discover a personalized property search experience and gain access to exclusive listings.",
+  signupbutton: "Sign Up",
+  learnmorebutton: "Learn More",
 };
 
 export default PropertiesCta13;

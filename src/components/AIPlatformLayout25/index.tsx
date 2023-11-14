@@ -4,26 +4,26 @@ import { Button, Img, Text } from "components";
 
 type AIPlatformLayout25Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  | "subheadingTwo"
-  | "headingThree"
+  | "subheadingtwo"
+  | "headingthree"
   | "descriptionTwo"
   | "number"
   | "text"
-  | "numberOne"
-  | "textOne"
+  | "numberone"
+  | "textone"
   | "learnMoreOne"
-  | "buttonThree"
+  | "buttonthree"
 > &
   Partial<{
-    subheadingTwo: string;
-    headingThree: string;
+    subheadingtwo: string;
+    headingthree: string;
     descriptionTwo: string;
     number: string;
     text: string;
-    numberOne: string;
-    textOne: string;
+    numberone: string;
+    textone: string;
     learnMoreOne: string;
-    buttonThree: string;
+    buttonthree: string;
   }>;
 
 const AIPlatformLayout25: React.FC<AIPlatformLayout25Props> = (props) => {
@@ -38,14 +38,14 @@ const AIPlatformLayout25: React.FC<AIPlatformLayout25Props> = (props) => {
                   className="text-base text-black-900 text-center w-auto"
                   size="txtRobotoSemiBold16"
                 >
-                  {props?.subheadingTwo}
+                  {props?.subheadingtwo}
                 </Text>
                 <div className="flex flex-col gap-6 items-start justify-start w-full">
                   <Text
                     className="leading-[120.00%] max-w-[664px] md:max-w-full text-5xl sm:text-[38px] md:text-[44px] text-black-900"
                     size="txtRobotoCondensedBold48"
                   >
-                    {props?.headingThree}
+                    {props?.headingthree}
                   </Text>
                   <Text
                     className="leading-[150.00%] max-w-[664px] md:max-w-full text-black-900 text-lg"
@@ -75,13 +75,13 @@ const AIPlatformLayout25: React.FC<AIPlatformLayout25Props> = (props) => {
                     className="text-5xl sm:text-[38px] md:text-[44px] text-black-900 w-full"
                     size="txtRobotoCondensedBold48"
                   >
-                    {props?.numberOne}
+                    {props?.numberone}
                   </Text>
                   <Text
                     className="leading-[150.00%] md:max-w-full max-w-xs text-base text-black-900"
                     size="txtRobotoRegular16"
                   >
-                    {props?.textOne}
+                    {props?.textone}
                   </Text>
                 </div>
               </div>
@@ -101,12 +101,12 @@ const AIPlatformLayout25: React.FC<AIPlatformLayout25Props> = (props) => {
                   className="text-base text-black-900 w-auto"
                   size="txtRobotoRegular16"
                 >
-                  {props?.buttonThree}
+                  {props?.buttonthree}
                 </Text>
                 <Img
                   className="h-6 w-6"
                   src="images/img_iconrelume.svg"
-                  alt="folder_Two"
+                  alt="foldertwo"
                 />
               </div>
             </div>
@@ -115,7 +115,7 @@ const AIPlatformLayout25: React.FC<AIPlatformLayout25Props> = (props) => {
         <Img
           className="flex-1 h-[500px] md:h-auto object-cover w-full"
           src="images/img_heroanimation.png"
-          alt="heroanimation_One"
+          alt="heroanimationon"
         />
       </div>
     </>
@@ -123,16 +123,16 @@ const AIPlatformLayout25: React.FC<AIPlatformLayout25Props> = (props) => {
 };
 
 AIPlatformLayout25.defaultProps = {
-  subheadingTwo: "Revolutionize",
-  headingThree: "AI Platform: Transforming Real Estate Search",
+  subheadingtwo: "Revolutionize",
+  headingthree: "AI Platform: Transforming Real Estate Search",
   descriptionTwo:
     "Our AI platform revolutionizes the real estate search process by analyzing millions of data points. Find the perfect property with ease.",
   number: "50%",
   text: "AI-powered technology for accurate property recommendations.",
-  numberOne: "50%",
-  textOne: "Efficiently search and compare properties worldwide.",
+  numberone: "50%",
+  textone: "Efficiently search and compare properties worldwide.",
   learnMoreOne: "Learn More",
-  buttonThree: "Sign Up",
+  buttonthree: "Sign Up",
 };
 
 export default AIPlatformLayout25;

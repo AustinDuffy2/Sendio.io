@@ -4,7 +4,7 @@ import { Button, Img, List, Text } from "components";
 import AIPlatformCta7 from "components/AIPlatformCta7";
 import Footer from "components/Footer";
 import Header from "components/Header";
-import PropertyDetailsColumnheadingTwo from "components/PropertyDetailsColumnheadingTwo";
+import PropertyDetailsColumnheadingtwo from "components/PropertyDetailsColumnheadingtwo";
 import PropertyDetailsContent2 from "components/PropertyDetailsContent2";
 import PropertyDetailsFaq1 from "components/PropertyDetailsFaq1";
 import PropertyDetailsLayout22 from "components/PropertyDetailsLayout22";
@@ -29,7 +29,7 @@ const PropertyDetailsPage: React.FC = () => {
             alt="content"
           />
         </div>
-        <PropertyDetailsColumnheadingTwo className="flex flex-col gap-20 items-start justify-start px-4 py-5 w-full" />
+        <PropertyDetailsColumnheadingtwo className="flex flex-col gap-20 items-start justify-start px-4 py-5 w-full" />
         <PropertyDetailsContent2 className="flex md:flex-col flex-row font-robotocondensed gap-[30px] items-start justify-center px-4 py-5 w-full" />
         <AIPlatformCta7 className="flex flex-col font-roboto gap-20 items-start justify-start px-4 py-5 w-full" />
         <PropertyDetailsPortfolio8 className="flex flex-col font-roboto md:gap-10 gap-20 items-start justify-start px-4 py-5 w-full" />

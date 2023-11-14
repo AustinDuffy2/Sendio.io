@@ -83,7 +83,7 @@ const HomeLayout219: React.FC<HomeLayout219Props> = (props) => {
         <Img
           className="flex-1 h-[500px] md:h-auto object-cover w-full"
           src="images/img_heroanimation.png"
-          alt="heroanimation_One"
+          alt="heroanimationon"
         />
       </div>
     </>

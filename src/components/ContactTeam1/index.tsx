@@ -4,8 +4,8 @@ import { Button, Img, Text } from "components";
 
 type ContactTeam1Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  | "subheadingOne"
-  | "headingOne"
+  | "subheadingone"
+  | "headingone"
   | "languageOne"
   | "name"
   | "jobtitle"
@@ -31,13 +31,13 @@ type ContactTeam1Props = Omit<
   | "name7"
   | "jobtitle7"
   | "text5"
-  | "headingTwo"
+  | "headingtwo"
   | "languageTwo"
   | "buttonOne"
 > &
   Partial<{
-    subheadingOne: string;
-    headingOne: string;
+    subheadingone: string;
+    headingone: string;
     languageOne: string;
     name: string;
     jobtitle: string;
@@ -63,7 +63,7 @@ type ContactTeam1Props = Omit<
     name7: string;
     jobtitle7: string;
     text5: string;
-    headingTwo: string;
+    headingtwo: string;
     languageTwo: string;
     buttonOne: string;
   }>;
@@ -77,14 +77,14 @@ const ContactTeam1: React.FC<ContactTeam1Props> = (props) => {
             className="text-base text-black-900 text-center w-auto"
             size="txtRobotoSemiBold16"
           >
-            {props?.subheadingOne}
+            {props?.subheadingone}
           </Text>
           <div className="flex flex-col gap-6 items-center justify-start w-full">
             <Text
               className="text-5xl sm:text-[38px] md:text-[44px] text-black-900 text-center w-full"
               size="txtRobotoCondensedBold48"
             >
-              {props?.headingOne}
+              {props?.headingone}
             </Text>
             <Text
               className="text-black-900 text-center text-lg w-full"
@@ -473,7 +473,7 @@ const ContactTeam1: React.FC<ContactTeam1Props> = (props) => {
                 className="md:text-3xl sm:text-[28px] text-[32px] text-black-900 text-center w-full"
                 size="txtRobotoBold32"
               >
-                {props?.headingTwo}
+                {props?.headingtwo}
               </Text>
               <Text
                 className="text-black-900 text-center text-lg w-full"
@@ -499,8 +499,8 @@ const ContactTeam1: React.FC<ContactTeam1Props> = (props) => {
 };
 
 ContactTeam1.defaultProps = {
-  subheadingOne: "Tagline",
-  headingOne: "Our team",
+  subheadingone: "Tagline",
+  headingone: "Our team",
   languageOne: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
   name: "Full name",
   jobtitle: "Job title",
@@ -533,7 +533,7 @@ ContactTeam1.defaultProps = {
   jobtitle7: "Job title",
   text5:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-  headingTwo: "We’re hiring!",
+  headingtwo: "We’re hiring!",
   languageTwo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
   buttonOne: "Button",
 };

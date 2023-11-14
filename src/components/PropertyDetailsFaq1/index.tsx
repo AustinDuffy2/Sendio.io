@@ -6,15 +6,15 @@ type PropertyDetailsFaq1Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
   | "headingtext"
   | "descriptiontext"
-  | "questiontext"
-  | "contacttext"
+  | "secondaryheadingtext"
+  | "secondarydescriptiontext"
   | "buttontext"
 > &
   Partial<{
     headingtext: string;
     descriptiontext: string;
-    questiontext: string;
-    contacttext: string;
+    secondaryheadingtext: string;
+    secondarydescriptiontext: string;
     buttontext: string;
   }>;
 
@@ -43,13 +43,13 @@ const PropertyDetailsFaq1: React.FC<PropertyDetailsFaq1Props> = (props) => {
                 className="md:text-3xl sm:text-[28px] text-[32px] text-black-900 text-center w-full"
                 size="txtRobotoBold32"
               >
-                {props?.questiontext}
+                {props?.secondaryheadingtext}
               </Text>
               <Text
                 className="text-black-900 text-center text-lg w-full"
                 size="txtRobotoRegular18"
               >
-                {props?.contacttext}
+                {props?.secondarydescriptiontext}
               </Text>
             </div>
             <Button
@@ -72,8 +72,8 @@ PropertyDetailsFaq1.defaultProps = {
   headingtext: "FAQs",
   descriptiontext:
     "Find answers to commonly asked questions about the property, including financing options, zoning regulations, and maintenance responsibilities.",
-  questiontext: "Still have questions?",
-  contacttext: "Contact us for more information.",
+  secondaryheadingtext: "Still have questions?",
+  secondarydescriptiontext: "Contact us for more information.",
   buttontext: "Button",
 };
 

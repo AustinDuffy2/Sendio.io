@@ -4,31 +4,31 @@ import { Img, List, Text } from "components";
 
 type AboutUsTeam8Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  | "subheadingTwo"
-  | "headingThree"
+  | "subheadingtwoon"
+  | "headingthree"
   | "loremipsumdolorOne"
-  | "useronename"
-  | "useronejobtitle"
+  | "username"
+  | "userjobtitle"
   | "description"
-  | "usertwoname"
-  | "usertwojobtitle"
+  | "username1"
+  | "userjobtitle1"
   | "description1"
-  | "userthreename"
-  | "userthreejobtitle"
+  | "username2"
+  | "userjobtitle2"
   | "description2"
 > &
   Partial<{
-    subheadingTwo: string;
-    headingThree: string;
+    subheadingtwoon: string;
+    headingthree: string;
     loremipsumdolorOne: string;
-    useronename: string;
-    useronejobtitle: string;
+    username: string;
+    userjobtitle: string;
     description: string;
-    usertwoname: string;
-    usertwojobtitle: string;
+    username1: string;
+    userjobtitle1: string;
     description1: string;
-    userthreename: string;
-    userthreejobtitle: string;
+    username2: string;
+    userjobtitle2: string;
     description2: string;
   }>;
 
@@ -41,14 +41,14 @@ const AboutUsTeam8: React.FC<AboutUsTeam8Props> = (props) => {
             className="text-base text-black-900 w-auto"
             size="txtRobotoSemiBold16"
           >
-            {props?.subheadingTwo}
+            {props?.subheadingtwoon}
           </Text>
           <div className="flex flex-col gap-6 items-center justify-start w-full">
             <Text
               className="text-5xl sm:text-[38px] md:text-[44px] text-black-900 w-full"
               size="txtRobotoCondensedBold48"
             >
-              {props?.headingThree}
+              {props?.headingthree}
             </Text>
             <Text
               className="text-black-900 text-lg w-full"
@@ -76,13 +76,13 @@ const AboutUsTeam8: React.FC<AboutUsTeam8Props> = (props) => {
                       className="text-black-900 text-xl w-full"
                       size="txtRobotoSemiBold20"
                     >
-                      {props?.useronename}
+                      {props?.username}
                     </Text>
                     <Text
                       className="text-black-900 text-lg w-full"
                       size="txtRobotoRegular18"
                     >
-                      {props?.useronejobtitle}
+                      {props?.userjobtitle}
                     </Text>
                   </div>
                   <Text
@@ -122,13 +122,13 @@ const AboutUsTeam8: React.FC<AboutUsTeam8Props> = (props) => {
                       className="text-black-900 text-xl w-full"
                       size="txtRobotoSemiBold20"
                     >
-                      {props?.usertwoname}
+                      {props?.username1}
                     </Text>
                     <Text
                       className="text-black-900 text-lg w-full"
                       size="txtRobotoRegular18"
                     >
-                      {props?.usertwojobtitle}
+                      {props?.userjobtitle1}
                     </Text>
                   </div>
                   <Text
@@ -168,13 +168,13 @@ const AboutUsTeam8: React.FC<AboutUsTeam8Props> = (props) => {
                       className="text-black-900 text-xl w-full"
                       size="txtRobotoSemiBold20"
                     >
-                      {props?.userthreename}
+                      {props?.username2}
                     </Text>
                     <Text
                       className="text-black-900 text-lg w-full"
                       size="txtRobotoRegular18"
                     >
-                      {props?.userthreejobtitle}
+                      {props?.userjobtitle2}
                     </Text>
                   </div>
                   <Text
@@ -211,20 +211,20 @@ const AboutUsTeam8: React.FC<AboutUsTeam8Props> = (props) => {
 };
 
 AboutUsTeam8.defaultProps = {
-  subheadingTwo: "Revolutionizing",
-  headingThree: "Meet Our Team",
+  subheadingtwoon: "Revolutionizing",
+  headingthree: "Meet Our Team",
   loremipsumdolorOne:
     "Get to know the talented individuals driving our platform",
-  useronename: "John Doe",
-  useronejobtitle: "Founder",
+  username: "John Doe",
+  userjobtitle: "Founder",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  usertwoname: "Jane Smith",
-  usertwojobtitle: "Developer",
+  username1: "Jane Smith",
+  userjobtitle1: "Developer",
   description1:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  userthreename: "Michael Johnson",
-  userthreejobtitle: "Advisor",
+  username2: "Michael Johnson",
+  userjobtitle2: "Advisor",
   description2:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 };

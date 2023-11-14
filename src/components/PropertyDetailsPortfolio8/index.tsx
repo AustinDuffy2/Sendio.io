@@ -5,36 +5,36 @@ import { Img, List, Text } from "components";
 type PropertyDetailsPortfolio8Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
   | "subheading"
-  | "userheading"
-  | "userlanguage"
-  | "projectheading"
-  | "projecttext"
-  | "projecttagone"
-  | "projecttagtwo"
-  | "projecttagthree"
+  | "headingfive"
+  | "language"
+  | "heading"
+  | "text"
+  | "tag"
+  | "tagone"
+  | "tagtwo"
   | "button"
-  | "projectheadingtwo"
-  | "projecttexttwo"
-  | "projecttagonetwo"
-  | "projecttagtwotwo"
-  | "projecttagthreetwo"
+  | "heading1"
+  | "text1"
+  | "tag1"
+  | "tagone1"
+  | "tagtwo1"
   | "button1"
 > &
   Partial<{
     subheading: string;
-    userheading: string;
-    userlanguage: string;
-    projectheading: string;
-    projecttext: string;
-    projecttagone: string;
-    projecttagtwo: string;
-    projecttagthree: string;
+    headingfive: string;
+    language: string;
+    heading: string;
+    text: string;
+    tag: string;
+    tagone: string;
+    tagtwo: string;
     button: string;
-    projectheadingtwo: string;
-    projecttexttwo: string;
-    projecttagonetwo: string;
-    projecttagtwotwo: string;
-    projecttagthreetwo: string;
+    heading1: string;
+    text1: string;
+    tag1: string;
+    tagone1: string;
+    tagtwo1: string;
     button1: string;
   }>;
 
@@ -56,13 +56,13 @@ const PropertyDetailsPortfolio8: React.FC<PropertyDetailsPortfolio8Props> = (
               className="text-5xl sm:text-[38px] md:text-[44px] text-black-900 text-center w-full"
               size="txtRobotoCondensedBold48"
             >
-              {props?.userheading}
+              {props?.headingfive}
             </Text>
             <Text
               className="text-black-900 text-center text-lg w-full"
               size="txtRobotoRegular18"
             >
-              {props?.userlanguage}
+              {props?.language}
             </Text>
           </div>
         </div>
@@ -72,7 +72,7 @@ const PropertyDetailsPortfolio8: React.FC<PropertyDetailsPortfolio8Props> = (
         >
           <div className="flex flex-1 flex-col gap-[30px] h-full items-center justify-start w-full">
             <Img
-              className="md:h-auto object-cover"
+              className="h-[500px] md:h-auto object-cover w-full"
               src="images/img_heroanimation.png"
               alt="heroanimation"
             />
@@ -82,13 +82,13 @@ const PropertyDetailsPortfolio8: React.FC<PropertyDetailsPortfolio8Props> = (
                   className="text-2xl md:text-[22px] text-black-900 sm:text-xl"
                   size="txtRobotoBold24"
                 >
-                  {props?.projectheading}
+                  {props?.heading}
                 </Text>
                 <Text
                   className="leading-[150.00%] max-w-[552px] md:max-w-full text-base text-black-900"
                   size="txtRobotoRegular16"
                 >
-                  {props?.projecttext}
+                  {props?.text}
                 </Text>
               </div>
               <div className="flex sm:flex-col flex-row gap-2 h-full items-start justify-start pt-4 w-full">
@@ -96,19 +96,19 @@ const PropertyDetailsPortfolio8: React.FC<PropertyDetailsPortfolio8Props> = (
                   className="bg-gray-100 flex-1 justify-center pl-2 sm:pr-5 pr-[35px] py-[5px] text-black-900 text-sm w-full"
                   size="txtRobotoSemiBold14"
                 >
-                  {props?.projecttagone}
+                  {props?.tag}
                 </Text>
                 <Text
                   className="bg-gray-100 flex-1 justify-center pl-2 sm:pr-5 pr-[35px] py-[5px] text-black-900 text-sm w-full"
                   size="txtRobotoSemiBold14"
                 >
-                  {props?.projecttagtwo}
+                  {props?.tagone}
                 </Text>
                 <Text
                   className="bg-gray-100 flex-1 justify-center pl-2 sm:pr-5 pr-[35px] py-[5px] text-black-900 text-sm w-full"
                   size="txtRobotoSemiBold14"
                 >
-                  {props?.projecttagthree}
+                  {props?.tagtwo}
                 </Text>
               </div>
               <div className="flex flex-col h-full items-start justify-start pt-6 w-full">
@@ -130,7 +130,7 @@ const PropertyDetailsPortfolio8: React.FC<PropertyDetailsPortfolio8Props> = (
           </div>
           <div className="flex flex-1 flex-col gap-[30px] h-[801px] md:h-auto items-center justify-start w-full">
             <Img
-              className="md:h-auto object-cover"
+              className="h-[500px] md:h-auto object-cover w-full"
               src="images/img_heroanimation.png"
               alt="heroanimation"
             />
@@ -140,13 +140,13 @@ const PropertyDetailsPortfolio8: React.FC<PropertyDetailsPortfolio8Props> = (
                   className="text-2xl md:text-[22px] text-black-900 sm:text-xl"
                   size="txtRobotoBold24"
                 >
-                  {props?.projectheadingtwo}
+                  {props?.heading1}
                 </Text>
                 <Text
                   className="leading-[150.00%] max-w-[552px] md:max-w-full text-base text-black-900"
                   size="txtRobotoRegular16"
                 >
-                  {props?.projecttexttwo}
+                  {props?.text1}
                 </Text>
               </div>
               <div className="flex sm:flex-col flex-row gap-2 h-full items-start justify-start pt-4 w-full">
@@ -154,19 +154,19 @@ const PropertyDetailsPortfolio8: React.FC<PropertyDetailsPortfolio8Props> = (
                   className="bg-gray-100 flex-1 justify-center pl-2 sm:pr-5 pr-[35px] py-[5px] text-black-900 text-sm w-full"
                   size="txtRobotoSemiBold14"
                 >
-                  {props?.projecttagonetwo}
+                  {props?.tag1}
                 </Text>
                 <Text
                   className="bg-gray-100 flex-1 justify-center pl-2 sm:pr-5 pr-[35px] py-[5px] text-black-900 text-sm w-full"
                   size="txtRobotoSemiBold14"
                 >
-                  {props?.projecttagtwotwo}
+                  {props?.tagone1}
                 </Text>
                 <Text
                   className="bg-gray-100 flex-1 justify-center pl-2 sm:pr-5 pr-[35px] py-[5px] text-black-900 text-sm w-full"
                   size="txtRobotoSemiBold14"
                 >
-                  {props?.projecttagthreetwo}
+                  {props?.tagtwo1}
                 </Text>
               </div>
               <div className="flex flex-col h-full items-start justify-start pt-6 w-full">
@@ -194,21 +194,20 @@ const PropertyDetailsPortfolio8: React.FC<PropertyDetailsPortfolio8Props> = (
 
 PropertyDetailsPortfolio8.defaultProps = {
   subheading: "Portfolio",
-  userheading: "Short heading goes here",
-  userlanguage: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-  projectheading: "Project name here",
-  projecttext:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-  projecttagone: "Tag one",
-  projecttagtwo: "Tag two",
-  projecttagthree: "Tag three",
+  headingfive: "Short heading goes here",
+  language: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+  heading: "Project name here",
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+  tag: "Tag one",
+  tagone: "Tag two",
+  tagtwo: "Tag three",
   button: "Button",
-  projectheadingtwo: "Project name here",
-  projecttexttwo:
+  heading1: "Project name here",
+  text1:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-  projecttagonetwo: "Tag one",
-  projecttagtwotwo: "Tag two",
-  projecttagthreetwo: "Tag three",
+  tag1: "Tag one",
+  tagone1: "Tag two",
+  tagtwo1: "Tag three",
   button1: "Button",
 };
 

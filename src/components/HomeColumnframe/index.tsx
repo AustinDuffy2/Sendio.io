@@ -4,23 +4,23 @@ import { Button, Img, Text } from "components";
 
 type HomeColumnframeProps = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  | "userprice"
+  | "price"
   | "ownedfromproperOne"
-  | "user25k"
+  | "p25k"
   | "propertysforbuy"
-  | "user500"
+  | "fivehundred"
   | "dailycompleted"
-  | "user600"
+  | "sixhundred"
   | "reagularclientsOne"
 > &
   Partial<{
-    userprice: string;
+    price: string;
     ownedfromproperOne: JSX.Element | string;
-    user25k: string;
+    p25k: string;
     propertysforbuy: string;
-    user500: string;
+    fivehundred: string;
     dailycompleted: JSX.Element | string;
-    user600: string;
+    sixhundred: string;
     reagularclientsOne: string;
   }>;
 
@@ -44,7 +44,7 @@ const HomeColumnframe: React.FC<HomeColumnframeProps> = (props) => {
                 className="text-5xl sm:text-[38px] md:text-[44px] text-black-900 text-center text-shadow-ts w-full"
                 size="txtRobotoCondensedBold48"
               >
-                {props?.userprice}
+                {props?.price}
               </Text>
               <Text
                 className="max-w-[332px] md:max-w-full text-[13px] text-black-900 text-center tracking-[-0.26px]"
@@ -65,7 +65,7 @@ const HomeColumnframe: React.FC<HomeColumnframeProps> = (props) => {
               <Img
                 className="h-8"
                 src="images/img_frame_orange_a700.svg"
-                alt="frame_One"
+                alt="frameone"
               />
             </Button>
             <div className="flex flex-col gap-3.5 items-center justify-center w-full">
@@ -73,7 +73,7 @@ const HomeColumnframe: React.FC<HomeColumnframeProps> = (props) => {
                 className="text-5xl sm:text-[38px] md:text-[44px] text-black-900 text-center text-shadow-ts w-full"
                 size="txtRobotoCondensedBold48"
               >
-                {props?.user25k}
+                {props?.p25k}
               </Text>
               <Text
                 className="text-[13px] text-black-900 text-center tracking-[-0.26px] w-full"
@@ -94,7 +94,7 @@ const HomeColumnframe: React.FC<HomeColumnframeProps> = (props) => {
                 className="text-5xl sm:text-[38px] md:text-[44px] text-black-900 text-center text-shadow-ts w-full"
                 size="txtRobotoCondensedBold48"
               >
-                {props?.user500}
+                {props?.fivehundred}
               </Text>
               <Text
                 className="max-w-[332px] md:max-w-full text-[13px] text-black-900 text-center tracking-[-0.26px]"
@@ -108,14 +108,14 @@ const HomeColumnframe: React.FC<HomeColumnframeProps> = (props) => {
             <Img
               className="h-[60px] w-[60px]"
               src="images/img_file_white_a700.svg"
-              alt="file_One"
+              alt="fileone"
             />
             <div className="flex flex-col gap-3.5 items-center justify-start w-full">
               <Text
                 className="text-5xl sm:text-[38px] md:text-[44px] text-black-900 text-center text-shadow-ts w-full"
                 size="txtRobotoCondensedBold48"
               >
-                {props?.user600}
+                {props?.sixhundred}
               </Text>
               <Text
                 className="text-[13px] text-black-900 text-center tracking-[-0.26px] w-full"
@@ -132,7 +132,7 @@ const HomeColumnframe: React.FC<HomeColumnframeProps> = (props) => {
 };
 
 HomeColumnframe.defaultProps = {
-  userprice: "$15.4M",
+  price: "$15.4M",
   ownedfromproperOne: (
     <>
       Owned from
@@ -140,16 +140,16 @@ HomeColumnframe.defaultProps = {
       Properties transactions
     </>
   ),
-  user25k: "25K+",
+  p25k: "25K+",
   propertysforbuy: "Properties for Buy & sell Successfully",
-  user500: "500",
+  fivehundred: "500",
   dailycompleted: (
     <>
       Daily completed <br />
       transactions
     </>
   ),
-  user600: "600+",
+  sixhundred: "600+",
   reagularclientsOne: "Reagular Clients",
 };
 

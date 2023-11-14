@@ -5,29 +5,29 @@ import { Button, Img, List, Text } from "components";
 type AIPlatformLayout241Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
   | "subheading"
-  | "headingOne"
+  | "headingone"
   | "descriptionOne"
-  | "propertysearchheading"
-  | "propertysearchdescription"
-  | "markettrendsheading"
-  | "markettrendsdescription"
-  | "personalizedrecommendationsheading"
-  | "personalizedrecommendationsdescription"
-  | "learnmorelabel"
-  | "buttonOne"
+  | "heading"
+  | "description"
+  | "heading1"
+  | "description1"
+  | "heading2"
+  | "text"
+  | "learnMore"
+  | "buttonone"
 > &
   Partial<{
     subheading: string;
-    headingOne: string;
+    headingone: string;
     descriptionOne: string;
-    propertysearchheading: string;
-    propertysearchdescription: string;
-    markettrendsheading: string;
-    markettrendsdescription: string;
-    personalizedrecommendationsheading: string;
-    personalizedrecommendationsdescription: string;
-    learnmorelabel: string;
-    buttonOne: string;
+    heading: string;
+    description: string;
+    heading1: string;
+    description1: string;
+    heading2: string;
+    text: string;
+    learnMore: string;
+    buttonone: string;
   }>;
 
 const AIPlatformLayout241: React.FC<AIPlatformLayout241Props> = (props) => {
@@ -46,7 +46,7 @@ const AIPlatformLayout241: React.FC<AIPlatformLayout241Props> = (props) => {
               className="text-5xl sm:text-[38px] md:text-[44px] text-black-900 w-full"
               size="txtRobotoCondensedBold48"
             >
-              {props?.headingOne}
+              {props?.headingone}
             </Text>
             <Text
               className="text-black-900 text-lg w-full"
@@ -71,13 +71,13 @@ const AIPlatformLayout241: React.FC<AIPlatformLayout241Props> = (props) => {
                 className="md:text-3xl sm:text-[28px] text-[32px] text-black-900 w-full"
                 size="txtRobotoBold32"
               >
-                {props?.propertysearchheading}
+                {props?.heading}
               </Text>
               <Text
                 className="leading-[150.00%] max-w-[437px] md:max-w-full text-base text-black-900"
                 size="txtRobotoRegular16"
               >
-                {props?.propertysearchdescription}
+                {props?.description}
               </Text>
             </div>
             <div className="flex flex-1 flex-col gap-6 items-start justify-start w-full">
@@ -90,13 +90,13 @@ const AIPlatformLayout241: React.FC<AIPlatformLayout241Props> = (props) => {
                 className="md:text-3xl sm:text-[28px] text-[32px] text-black-900 w-full"
                 size="txtRobotoBold32"
               >
-                {props?.markettrendsheading}
+                {props?.heading1}
               </Text>
               <Text
                 className="leading-[150.00%] max-w-[437px] md:max-w-full text-base text-black-900"
                 size="txtRobotoRegular16"
               >
-                {props?.markettrendsdescription}
+                {props?.description1}
               </Text>
             </div>
             <div className="flex flex-1 flex-col gap-6 items-start justify-start w-full">
@@ -109,13 +109,13 @@ const AIPlatformLayout241: React.FC<AIPlatformLayout241Props> = (props) => {
                 className="leading-[130.00%] max-w-[437px] md:max-w-full md:text-3xl sm:text-[28px] text-[32px] text-black-900"
                 size="txtRobotoBold32"
               >
-                {props?.personalizedrecommendationsheading}
+                {props?.heading2}
               </Text>
               <Text
                 className="leading-[150.00%] max-w-[437px] md:max-w-full text-base text-black-900"
                 size="txtRobotoRegular16"
               >
-                {props?.personalizedrecommendationsdescription}
+                {props?.text}
               </Text>
             </div>
           </List>
@@ -127,14 +127,14 @@ const AIPlatformLayout241: React.FC<AIPlatformLayout241Props> = (props) => {
               size="md"
               variant="fill"
             >
-              {props?.learnmorelabel}
+              {props?.learnMore}
             </Button>
             <div className="flex flex-row gap-2 items-center justify-center rounded-[10px] shadow-bs w-auto">
               <Text
                 className="text-base text-black-900 w-auto"
                 size="txtRobotoRegular16"
               >
-                {props?.buttonOne}
+                {props?.buttonone}
               </Text>
               <Img
                 className="h-6 w-6"
@@ -151,20 +151,19 @@ const AIPlatformLayout241: React.FC<AIPlatformLayout241Props> = (props) => {
 
 AIPlatformLayout241.defaultProps = {
   subheading: "Discover",
-  headingOne: "Unlock the Power of Our AI Platform",
+  headingone: "Unlock the Power of Our AI Platform",
   descriptionOne:
     "Our AI platform offers advanced property search capabilities, market trends analysis, and personalized recommendations to help you find the perfect real estate investment.",
-  propertysearchheading: "Advanced Property Search",
-  propertysearchdescription:
+  heading: "Advanced Property Search",
+  description:
     "Effortlessly search for commercial real estate, multi-family properties, industrial sites, and rental properties around the world.",
-  markettrendsheading: "Market Trends Analysis",
-  markettrendsdescription:
+  heading1: "Market Trends Analysis",
+  description1:
     "Stay ahead of the curve with our AI-powered market trends analysis, providing valuable insights into real estate market dynamics.",
-  personalizedrecommendationsheading: "Personalized Recommendations",
-  personalizedrecommendationsdescription:
-    "Receive tailored recommendations based on your preferences, ensuring you find the best investment opportunities.",
-  learnmorelabel: "Learn More",
-  buttonOne: "Sign Up",
+  heading2: "Personalized Recommendations",
+  text: "Receive tailored recommendations based on your preferences, ensuring you find the best investment opportunities.",
+  learnMore: "Learn More",
+  buttonone: "Sign Up",
 };
 
 export default AIPlatformLayout241;

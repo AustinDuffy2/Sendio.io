@@ -4,9 +4,9 @@ import { Img, Text } from "components";
 
 type HomeTestimonial4Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  "description" | "name" | "title"
+  "descriptionOne" | "username" | "userposition"
 > &
-  Partial<{ description: string; name: string; title: string }>;
+  Partial<{ descriptionOne: string; username: string; userposition: string }>;
 
 const HomeTestimonial4: React.FC<HomeTestimonial4Props> = (props) => {
   return (
@@ -23,7 +23,7 @@ const HomeTestimonial4: React.FC<HomeTestimonial4Props> = (props) => {
               className="leading-[140.00%] text-2xl md:text-[22px] text-black-900 text-center sm:text-xl w-full"
               size="txtRobotoBold24"
             >
-              {props?.description}
+              {props?.descriptionOne}
             </Text>
             <div className="flex md:flex-col flex-row gap-[19.21px] items-center justify-center w-full">
               <Img
@@ -33,16 +33,16 @@ const HomeTestimonial4: React.FC<HomeTestimonial4Props> = (props) => {
               />
               <div className="flex flex-1 flex-col gap-[5px] items-start justify-start w-full">
                 <Text
-                  className="flex md:justify-center justify-start text-base text-black-900 w-full"
+                  className="text-base text-black-900 w-full"
                   size="txtRobotoSemiBold16"
                 >
-                  {props?.name}
+                  {props?.username}
                 </Text>
                 <Text
-                  className="flex md:justify-center text-base text-black-900 text-center w-full"
+                  className="text-base text-black-900 text-center w-full"
                   size="txtRobotoRegular16"
                 >
-                  {props?.title}
+                  {props?.userposition}
                 </Text>
               </div>
             </div>
@@ -54,10 +54,10 @@ const HomeTestimonial4: React.FC<HomeTestimonial4Props> = (props) => {
 };
 
 HomeTestimonial4.defaultProps = {
-  description:
+  descriptionOne:
     "Our platform has been a game-changer for me. I was able to find my dream property within days, thanks to the advanced search features and comprehensive real estate data.",
-  name: "John Doe",
-  title: "CEO, ABC Company",
+  username: "John Doe",
+  userposition: "CEO, ABC Company",
 };
 
 export default HomeTestimonial4;

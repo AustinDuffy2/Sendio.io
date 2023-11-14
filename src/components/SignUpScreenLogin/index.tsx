@@ -1,5 +1,7 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import { Button, Img, Input, Line, PagerIndicator, Text } from "components";
 
 type SignUpScreenLoginProps = Omit<
@@ -11,12 +13,11 @@ type SignUpScreenLoginProps = Omit<
   | "name"
   | "email"
   | "password"
-  | "signUp"
-  | "signUpWithGoogle"
-  | "textOne"
+  | "signuplabel"
+  | "signupwithgooglelabel"
   | "description"
-  | "textTwo"
-  | "textThree"
+  | "textone"
+  | "texttwo"
 > &
   Partial<{
     signup: string;
@@ -26,23 +27,27 @@ type SignUpScreenLoginProps = Omit<
     name: string;
     email: string;
     password: string;
-    signUp: string;
-    signUpWithGoogle: string;
-    textOne: string;
+    signuplabel: string;
+    signupwithgooglelabel: string;
     description: JSX.Element | string;
-    textTwo: string;
-    textThree: string;
+    textone: string;
+    texttwo: string;
   }>;
 
 const SignUpScreenLogin: React.FC<SignUpScreenLoginProps> = (props) => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className={props.className}>
-        <div className="flex flex-1 flex-col md:gap-10 gap-32 items-center justify-start md:px-10 px-16 sm:px-5 w-full">
+        <div className="flex flex-1 flex-col items-center justify-start md:px-10 px-16 sm:px-5 w-full">
           <div className="flex flex-col gap-8 h-[754px] md:h-auto items-center justify-start pb-24 pt-2 w-full">
             <div className="flex sm:flex-col flex-row sm:gap-5 items-start justify-start w-full">
               <div className="flex flex-1 flex-col items-start justify-start w-full">
-                <div className="flex flex-col h-12 md:h-auto items-center justify-center sm:px-5 px-6 py-3 w-full">
+                <div
+                  className="common-pointer flex flex-col h-12 md:h-auto items-center justify-center sm:px-5 px-6 py-3 w-full"
+                  onClick={() => navigate("/signupscreen")}
+                >
                   <Text
                     className="text-base text-black-900 w-auto"
                     size="txtRobotoRegular16"
@@ -52,7 +57,10 @@ const SignUpScreenLogin: React.FC<SignUpScreenLoginProps> = (props) => {
                   <Line className="bg-black-900 h-px w-full" />
                 </div>
               </div>
-              <div className="flex flex-1 flex-col items-center justify-center sm:px-5 px-6 py-3 w-full">
+              <div
+                className="common-pointer flex flex-1 flex-col items-center justify-center sm:px-5 px-6 py-3 w-full"
+                onClick={() => navigate("/loginscreen")}
+              >
                 <Text
                   className="text-base text-black-900 w-auto"
                   size="txtRobotoRegular16"
@@ -101,7 +109,7 @@ const SignUpScreenLogin: React.FC<SignUpScreenLoginProps> = (props) => {
                   {props?.email}
                 </Text>
                 <Input
-                  name="textinput_One"
+                  name="textinputone"
                   placeholder=""
                   className="p-0 w-full"
                   wrapClassName="flex h-12 outline outline-[1px] outline-black-900 w-full"
@@ -118,7 +126,7 @@ const SignUpScreenLogin: React.FC<SignUpScreenLoginProps> = (props) => {
                   {props?.password}
                 </Text>
                 <Input
-                  name="textinput_Two"
+                  name="textinputtwo"
                   placeholder=""
                   className="p-0 w-full"
                   wrapClassName="flex h-12 outline outline-[1px] outline-black-900 w-full"
@@ -135,7 +143,7 @@ const SignUpScreenLogin: React.FC<SignUpScreenLoginProps> = (props) => {
                   size="md"
                   variant="fill"
                 >
-                  {props?.signUp}
+                  {props?.signuplabel}
                 </Button>
                 <Button
                   className="cursor-pointer flex items-center justify-center min-w-[565px] sm:min-w-full"
@@ -152,19 +160,11 @@ const SignUpScreenLogin: React.FC<SignUpScreenLoginProps> = (props) => {
                   variant="fill"
                 >
                   <div className="font-roboto text-base text-left">
-                    {props?.signUpWithGoogle}
+                    {props?.signupwithgooglelabel}
                   </div>
                 </Button>
               </div>
             </div>
-          </div>
-          <div className="flex flex-col h-[72px] md:h-auto items-center justify-start w-full">
-            <Text
-              className="text-base text-black-900 text-center w-auto"
-              size="txtRobotoRegular16"
-            >
-              {props?.textOne}
-            </Text>
           </div>
         </div>
         <div className="flex flex-1 flex-col items-center justify-center md:px-10 px-16 sm:px-5 py-12 w-full">
@@ -192,13 +192,13 @@ const SignUpScreenLogin: React.FC<SignUpScreenLoginProps> = (props) => {
                     className="text-base text-black-900 w-auto"
                     size="txtRobotoSemiBold16"
                   >
-                    {props?.textTwo}
+                    {props?.textone}
                   </Text>
                   <Text
                     className="text-base text-black-900 w-auto"
                     size="txtRobotoRegular16"
                   >
-                    {props?.textThree}
+                    {props?.texttwo}
                   </Text>
                 </div>
               </div>
@@ -220,7 +220,7 @@ const SignUpScreenLogin: React.FC<SignUpScreenLoginProps> = (props) => {
                 <Img
                   className="h-12 w-12"
                   src="images/img_icon_black_900.svg"
-                  alt="icon_One"
+                  alt="iconone"
                 />
               </div>
             </div>
@@ -239,9 +239,8 @@ SignUpScreenLogin.defaultProps = {
   name: "Name*",
   email: "Email*",
   password: "Password*",
-  signUp: "Sign Up",
-  signUpWithGoogle: "Sign Up with Google",
-  textOne: "© 2022 Relume",
+  signuplabel: "Sign Up",
+  signupwithgooglelabel: "Sign Up with Google",
   description: (
     <>
       &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -249,8 +248,8 @@ SignUpScreenLogin.defaultProps = {
       ornare, eros dolor interdum nulla.&quot;
     </>
   ),
-  textTwo: "Name Surname",
-  textThree: "Position, Company name",
+  textone: "Name Surname",
+  texttwo: "Position, Company name",
 };
 
 export default SignUpScreenLogin;

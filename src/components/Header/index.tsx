@@ -2,11 +2,11 @@ import React from "react";
 
 import { Button, Img } from "components";
 
-type HeaderProps = React.DetailedHTMLProps<
-  React.HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
+type HeaderProps = Omit<
+  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
+  "button"
 > &
-  Partial<{}>;
+  Partial<{ button: string }>;
 
 const Header: React.FC<HeaderProps> = (props) => {
   return (
@@ -14,19 +14,19 @@ const Header: React.FC<HeaderProps> = (props) => {
       <header className={props.className}>
         <div className="flex flex-row gap-8 items-center justify-center w-full">
           <Img
-            className="sm:block flex-1 sm:flex-col h-[25px] sm:h-[] md:h-[] max-h-[25px] sm:max-h-[] md:max-h-[] md:min-w-0"
+            className="flex-1 h-[25px] sm:h-[] md:h-[] max-h-[25px] sm:max-h-[] md:max-h-[] md:min-w-0"
             src="images/img_column.svg"
             alt="column"
           />
           <div className="flex flex-row gap-6 items-center justify-center w-auto">
             <Button
-              className="!text-white-A700 cursor-pointer flex font-roboto sm:hidden min-w-[88px] text-base text-center"
+              className="!text-white-A700 cursor-pointer md:flex font-roboto sm:hidden min-w-[88px] text-base text-center"
               shape="round"
               color="light_blue_500"
               size="md"
               variant="fill"
             >
-              Button
+              {props?.button}
             </Button>
             <div className="flex flex-col items-start justify-start p-3 w-12">
               <Img

@@ -4,11 +4,11 @@ import { Button, Text } from "components";
 
 type AIPlatformCta7Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  "headingFive" | "textFive" | "signuplabel" | "learnmorelabel"
+  "headingfive" | "textfive" | "signuplabel" | "learnmorelabel"
 > &
   Partial<{
-    headingFive: string;
-    textFive: string;
+    headingfive: string;
+    textfive: string;
     signuplabel: string;
     learnmorelabel: string;
   }>;
@@ -24,13 +24,13 @@ const AIPlatformCta7: React.FC<AIPlatformCta7Props> = (props) => {
                 className="sm:text-4xl md:text-[38px] text-[40px] text-black-900 w-full"
                 size="txtRobotoCondensedBold40Black900"
               >
-                {props?.headingFive}
+                {props?.headingfive}
               </Text>
               <Text
                 className="text-black-900 text-lg w-full"
                 size="txtRobotoRegular18"
               >
-                {props?.textFive}
+                {props?.textfive}
               </Text>
             </div>
           </div>
@@ -61,8 +61,8 @@ const AIPlatformCta7: React.FC<AIPlatformCta7Props> = (props) => {
 };
 
 AIPlatformCta7.defaultProps = {
-  headingFive: "Unlock the Power of AI",
-  textFive: "Discover the Future of Real Estate with Our AI Platform",
+  headingfive: "Unlock the Power of AI",
+  textfive: "Discover the Future of Real Estate with Our AI Platform",
   signuplabel: "Sign Up",
   learnmorelabel: "Learn More",
 };

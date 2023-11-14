@@ -4,11 +4,14 @@ import { Button, Text } from "components";
 
 type SearchCta45Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  "headingtext" | "contenttext" | "signupbuttontext" | "learnmorebuttontext"
+  | "headingthreetext"
+  | "textthreetext"
+  | "signupbuttontext"
+  | "learnmorebuttontext"
 > &
   Partial<{
-    headingtext: string;
-    contenttext: string;
+    headingthreetext: string;
+    textthreetext: string;
     signupbuttontext: string;
     learnmorebuttontext: string;
   }>;
@@ -23,13 +26,13 @@ const SearchCta45: React.FC<SearchCta45Props> = (props) => {
               className="sm:text-4xl md:text-[38px] text-[40px] text-black-900 w-full"
               size="txtRobotoCondensedBold40Black900"
             >
-              {props?.headingtext}
+              {props?.headingthreetext}
             </Text>
             <Text
               className="text-black-900 text-lg w-full"
               size="txtRobotoRegular18"
             >
-              {props?.contenttext}
+              {props?.textthreetext}
             </Text>
           </div>
           <div className="flex flex-1 flex-row gap-4 items-start justify-center w-full">
@@ -59,8 +62,8 @@ const SearchCta45: React.FC<SearchCta45Props> = (props) => {
 };
 
 SearchCta45.defaultProps = {
-  headingtext: "Unlock Advanced Search Features Today",
-  contenttext: "Discover the Perfect Property for You",
+  headingthreetext: "Unlock Advanced Search Features Today",
+  textthreetext: "Discover the Perfect Property for You",
   signupbuttontext: "Sign Up",
   learnmorebuttontext: "Learn More",
 };

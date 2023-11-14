@@ -4,20 +4,20 @@ import { Text } from "components";
 
 type AIPlatformLayout27Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  | "headingFour"
-  | "textTwo"
-  | "numberTwo"
-  | "textThree"
-  | "numberThree"
-  | "textFour"
+  | "headingfour"
+  | "texttwo"
+  | "numbertwo"
+  | "textthree"
+  | "numberthree"
+  | "textfour"
 > &
   Partial<{
-    headingFour: string;
-    textTwo: string;
-    numberTwo: string;
-    textThree: string;
-    numberThree: string;
-    textFour: string;
+    headingfour: string;
+    texttwo: string;
+    numbertwo: string;
+    textthree: string;
+    numberthree: string;
+    textfour: string;
   }>;
 
 const AIPlatformLayout27: React.FC<AIPlatformLayout27Props> = (props) => {
@@ -31,13 +31,13 @@ const AIPlatformLayout27: React.FC<AIPlatformLayout27Props> = (props) => {
                 className="sm:text-4xl md:text-[38px] text-[40px] text-black-900 w-full"
                 size="txtRobotoCondensedBold40Black900"
               >
-                {props?.headingFour}
+                {props?.headingfour}
               </Text>
               <Text
                 className="text-black-900 text-lg w-full"
                 size="txtRobotoRegular18"
               >
-                {props?.textTwo}
+                {props?.texttwo}
               </Text>
             </div>
             <div className="flex md:flex-col flex-row gap-6 items-start justify-start py-2 w-full">
@@ -46,13 +46,13 @@ const AIPlatformLayout27: React.FC<AIPlatformLayout27Props> = (props) => {
                   className="text-5xl sm:text-[38px] md:text-[44px] text-black-900 w-full"
                   size="txtRobotoCondensedBold48"
                 >
-                  {props?.numberTwo}
+                  {props?.numbertwo}
                 </Text>
                 <Text
                   className="text-base text-black-900 w-full"
                   size="txtRobotoRegular16"
                 >
-                  {props?.textThree}
+                  {props?.textthree}
                 </Text>
               </div>
               <div className="flex flex-1 flex-col gap-2 items-start justify-start w-full">
@@ -60,13 +60,13 @@ const AIPlatformLayout27: React.FC<AIPlatformLayout27Props> = (props) => {
                   className="text-5xl sm:text-[38px] md:text-[44px] text-black-900 w-full"
                   size="txtRobotoCondensedBold48"
                 >
-                  {props?.numberThree}
+                  {props?.numberthree}
                 </Text>
                 <Text
                   className="text-base text-black-900 w-full"
                   size="txtRobotoRegular16"
                 >
-                  {props?.textFour}
+                  {props?.textfour}
                 </Text>
               </div>
             </div>
@@ -78,13 +78,13 @@ const AIPlatformLayout27: React.FC<AIPlatformLayout27Props> = (props) => {
 };
 
 AIPlatformLayout27.defaultProps = {
-  headingFour: "Discover the Power of Our Platform",
-  textTwo:
+  headingfour: "Discover the Power of Our Platform",
+  texttwo:
     "With our highly trained AI platform, we have successfully found countless properties and satisfied users worldwide.",
-  numberTwo: "50%",
-  textThree: "Increase in Property Discoveries and User Satisfaction",
-  numberThree: "50%",
-  textFour: "Growth in Property Listings and User Engagement",
+  numbertwo: "50%",
+  textthree: "Increase in Property Discoveries and User Satisfaction",
+  numberthree: "50%",
+  textfour: "Growth in Property Listings and User Engagement",
 };
 
 export default AIPlatformLayout27;

@@ -4,28 +4,28 @@ import { Button, Img, Input, Line, Radio, RadioGroup, Text } from "components";
 
 type ContactContact4Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  | "tagline"
-  | "contactus"
-  | "loremipsum"
+  | "subheadingthree"
+  | "headingfour"
+  | "languageThree"
   | "firstname"
   | "lastname"
   | "email"
   | "phonenumber"
-  | "choosetopic"
+  | "chooseatopic"
   | "whichbestdescriOne"
   | "message"
   | "typeyourmessageOne"
   | "submitbutton"
 > &
   Partial<{
-    tagline: string;
-    contactus: string;
-    loremipsum: string;
+    subheadingthree: string;
+    headingfour: string;
+    languageThree: string;
     firstname: string;
     lastname: string;
     email: string;
     phonenumber: string;
-    choosetopic: string;
+    chooseatopic: string;
     whichbestdescriOne: string;
     message: string;
     typeyourmessageOne: string;
@@ -41,20 +41,20 @@ const ContactContact4: React.FC<ContactContact4Props> = (props) => {
             className="text-base text-black-900 text-center w-auto"
             size="txtRobotoSemiBold16"
           >
-            {props?.tagline}
+            {props?.subheadingthree}
           </Text>
           <div className="flex flex-col gap-6 items-start justify-start w-full">
             <Text
               className="text-5xl sm:text-[38px] md:text-[44px] text-black-900 w-full"
               size="txtRobotoCondensedBold48"
             >
-              {props?.contactus}
+              {props?.headingfour}
             </Text>
             <Text
               className="text-black-900 text-lg w-full"
               size="txtRobotoRegular18"
             >
-              {props?.loremipsum}
+              {props?.languageThree}
             </Text>
           </div>
         </div>
@@ -86,7 +86,7 @@ const ContactContact4: React.FC<ContactContact4Props> = (props) => {
                 {props?.lastname}
               </Text>
               <Input
-                name="textinput_One"
+                name="textinputone"
                 placeholder="Placeholder"
                 className="!placeholder:text-gray-800 !text-gray-800 font-roboto p-0 text-base text-left w-full"
                 wrapClassName="outline outline-[1px] outline-black-900 w-full"
@@ -106,7 +106,7 @@ const ContactContact4: React.FC<ContactContact4Props> = (props) => {
                 {props?.email}
               </Text>
               <Input
-                name="textinput_Two"
+                name="textinputtwo"
                 placeholder="Placeholder"
                 className="!placeholder:text-gray-800 !text-gray-800 font-roboto p-0 text-base text-left w-full"
                 wrapClassName="outline outline-[1px] outline-black-900 w-full"
@@ -124,7 +124,7 @@ const ContactContact4: React.FC<ContactContact4Props> = (props) => {
                 {props?.phonenumber}
               </Text>
               <Input
-                name="textinput_Three"
+                name="textinputthree"
                 placeholder="Placeholder"
                 className="!placeholder:text-gray-800 !text-gray-800 font-roboto p-0 text-base text-left w-full"
                 wrapClassName="outline outline-[1px] outline-black-900 w-full"
@@ -140,7 +140,7 @@ const ContactContact4: React.FC<ContactContact4Props> = (props) => {
               className="text-base text-black-900 w-full"
               size="txtRobotoRegular16"
             >
-              {props?.choosetopic}
+              {props?.chooseatopic}
             </Text>
             <Input
               name="select"
@@ -261,7 +261,7 @@ const ContactContact4: React.FC<ContactContact4Props> = (props) => {
             className="font-roboto sm:pr-5 text-base text-black-900 text-left"
             inputClassName="bg-white-A700 h-[18px] mr-[5px] outline outline-[1px] outline-black-900 rounded-[9px] w-[18px]"
             checked={false}
-            name="labelSix"
+            name="labelsix"
             label="Radio"
             id="Radio7"
           ></Radio>
@@ -281,14 +281,14 @@ const ContactContact4: React.FC<ContactContact4Props> = (props) => {
 };
 
 ContactContact4.defaultProps = {
-  tagline: "Tagline",
-  contactus: "Contact us",
-  loremipsum: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+  subheadingthree: "Tagline",
+  headingfour: "Contact us",
+  languageThree: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
   firstname: "First name",
   lastname: "Last name",
   email: "Email",
   phonenumber: "Phone number",
-  choosetopic: "Choose a topic",
+  chooseatopic: "Choose a topic",
   whichbestdescriOne: "Which best describes you?",
   message: "Message",
   typeyourmessageOne: "Type your message...",

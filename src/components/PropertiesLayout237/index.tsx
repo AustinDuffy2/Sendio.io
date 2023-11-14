@@ -5,29 +5,29 @@ import { Button, Img, List, Text } from "components";
 type PropertiesLayout237Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
   | "tagline"
-  | "headingTwo"
-  | "description"
-  | "heading"
-  | "text"
-  | "heading1"
-  | "text1"
-  | "heading2"
-  | "text2"
-  | "search"
-  | "buttonOne"
+  | "searchtagline"
+  | "searchdescription"
+  | "locationsearchheading"
+  | "locationsearchtext"
+  | "propertytypefilterheading"
+  | "propertytypefiltertext"
+  | "sizepricerangefilterheading"
+  | "sizepricerangefiltertext"
+  | "searchbuttontext"
+  | "signupbuttontext"
 > &
   Partial<{
     tagline: string;
-    headingTwo: string;
-    description: JSX.Element | string;
-    heading: string;
-    text: string;
-    heading1: string;
-    text1: string;
-    heading2: string;
-    text2: JSX.Element | string;
-    search: string;
-    buttonOne: string;
+    searchtagline: string;
+    searchdescription: JSX.Element | string;
+    locationsearchheading: string;
+    locationsearchtext: string;
+    propertytypefilterheading: string;
+    propertytypefiltertext: string;
+    sizepricerangefilterheading: string;
+    sizepricerangefiltertext: JSX.Element | string;
+    searchbuttontext: string;
+    signupbuttontext: string;
   }>;
 
 const PropertiesLayout237: React.FC<PropertiesLayout237Props> = (props) => {
@@ -46,13 +46,13 @@ const PropertiesLayout237: React.FC<PropertiesLayout237Props> = (props) => {
               className="text-5xl sm:text-[38px] md:text-[44px] text-black-900 text-center w-full"
               size="txtRobotoCondensedBold48"
             >
-              {props?.headingTwo}
+              {props?.searchtagline}
             </Text>
             <Text
               className="leading-[150.00%] max-w-[1408px] md:max-w-full text-black-900 text-center text-lg"
               size="txtRobotoRegular18"
             >
-              {props?.description}
+              {props?.searchdescription}
             </Text>
           </div>
         </div>
@@ -72,13 +72,13 @@ const PropertiesLayout237: React.FC<PropertiesLayout237Props> = (props) => {
                   className="md:text-3xl sm:text-[28px] text-[32px] text-black-900 text-center w-full"
                   size="txtRobotoBold32"
                 >
-                  {props?.heading}
+                  {props?.locationsearchheading}
                 </Text>
                 <Text
                   className="text-base text-black-900 text-center w-full"
                   size="txtRobotoRegular16"
                 >
-                  {props?.text}
+                  {props?.locationsearchtext}
                 </Text>
               </div>
             </div>
@@ -93,13 +93,13 @@ const PropertiesLayout237: React.FC<PropertiesLayout237Props> = (props) => {
                   className="md:text-3xl sm:text-[28px] text-[32px] text-black-900 text-center w-full"
                   size="txtRobotoBold32"
                 >
-                  {props?.heading1}
+                  {props?.propertytypefilterheading}
                 </Text>
                 <Text
                   className="leading-[150.00%] max-w-[437px] md:max-w-full text-base text-black-900 text-center"
                   size="txtRobotoRegular16"
                 >
-                  {props?.text1}
+                  {props?.propertytypefiltertext}
                 </Text>
               </div>
             </div>
@@ -114,13 +114,13 @@ const PropertiesLayout237: React.FC<PropertiesLayout237Props> = (props) => {
                   className="md:text-3xl sm:text-[28px] text-[32px] text-black-900 text-center w-full"
                   size="txtRobotoBold32"
                 >
-                  {props?.heading2}
+                  {props?.sizepricerangefilterheading}
                 </Text>
                 <Text
                   className="leading-[150.00%] max-w-[437px] md:max-w-full text-base text-black-900 text-center"
                   size="txtRobotoRegular16"
                 >
-                  {props?.text2}
+                  {props?.sizepricerangefiltertext}
                 </Text>
               </div>
             </div>
@@ -133,14 +133,14 @@ const PropertiesLayout237: React.FC<PropertiesLayout237Props> = (props) => {
               size="md"
               variant="fill"
             >
-              {props?.search}
+              {props?.searchbuttontext}
             </Button>
             <div className="flex flex-row gap-2 items-center justify-center rounded-[10px] shadow-bs w-auto">
               <Text
                 className="text-base text-black-900 w-auto"
                 size="txtRobotoRegular16"
               >
-                {props?.buttonOne}
+                {props?.signupbuttontext}
               </Text>
               <Img
                 className="h-6 w-6"
@@ -157,8 +157,8 @@ const PropertiesLayout237: React.FC<PropertiesLayout237Props> = (props) => {
 
 PropertiesLayout237.defaultProps = {
   tagline: "Discover",
-  headingTwo: "Find Your Perfect Property with Advanced Search Filters",
-  description: (
+  searchtagline: "Find Your Perfect Property with Advanced Search Filters",
+  searchdescription: (
     <>
       Our platform offers a highly advanced search feature that allows you to
       easily find the perfect property. With filters for location, property
@@ -166,20 +166,21 @@ PropertiesLayout237.defaultProps = {
       find exactly what you&#39;re looking for.
     </>
   ),
-  heading: "Location-Based Search",
-  text: "Easily search for properties based on your desired location.",
-  heading1: "Property Type Filter",
-  text1:
+  locationsearchheading: "Location-Based Search",
+  locationsearchtext:
+    "Easily search for properties based on your desired location.",
+  propertytypefilterheading: "Property Type Filter",
+  propertytypefiltertext:
     "Filter properties based on their type, such as commercial real estate, multi-family, or industrial sites.",
-  heading2: "Size and Price Range Filters",
-  text2: (
+  sizepricerangefilterheading: "Size and Price Range Filters",
+  sizepricerangefiltertext: (
     <>
       Narrow down your search by specifying the size and price range of the
       properties you&#39;re interested in.
     </>
   ),
-  search: "Search",
-  buttonOne: "Sign Up",
+  searchbuttontext: "Search",
+  signupbuttontext: "Sign Up",
 };
 
 export default PropertiesLayout237;

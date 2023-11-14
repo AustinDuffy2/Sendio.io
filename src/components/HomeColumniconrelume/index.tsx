@@ -6,29 +6,29 @@ type HomeColumniconrelumeProps = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
   | "sectionheading"
   | "sectiondescription"
-  | "buttonlabel"
-  | "buttonOne"
+  | "actionbutton"
+  | "buttonone"
   | "sectionheading1"
   | "sectiondescription1"
-  | "buttonlabel1"
+  | "actionbutton1"
   | "buttonone1"
   | "sectionheading2"
   | "sectiondescription2"
-  | "buttonlabel2"
+  | "actionbutton2"
   | "buttonone2"
 > &
   Partial<{
     sectionheading: string;
     sectiondescription: string;
-    buttonlabel: string;
-    buttonOne: string;
+    actionbutton: string;
+    buttonone: string;
     sectionheading1: string;
     sectiondescription1: string;
-    buttonlabel1: string;
+    actionbutton1: string;
     buttonone1: string;
     sectionheading2: string;
     sectiondescription2: string;
-    buttonlabel2: string;
+    actionbutton2: string;
     buttonone2: string;
   }>;
 
@@ -70,7 +70,7 @@ const HomeColumniconrelume: React.FC<HomeColumniconrelumeProps> = (props) => {
                 size="md"
                 variant="fill"
               >
-                {props?.buttonlabel}
+                {props?.actionbutton}
               </Button>
               <div className="h-[23px] relative w-[76px]">
                 <div className="absolute flex flex-col h-full inset-[0] items-center justify-center m-auto rounded-[9px] shadow-bs3 w-auto">
@@ -78,11 +78,11 @@ const HomeColumniconrelume: React.FC<HomeColumniconrelumeProps> = (props) => {
                     className="text-base text-black-900 w-auto"
                     size="txtRobotoRegular16"
                   >
-                    {props?.buttonOne}
+                    {props?.buttonone}
                   </Text>
                 </div>
                 <Img
-                  className="absolute h-[23px] hidden inset-y-[0] my-auto right-[0] w-[23px]"
+                  className="absolute h-[23px] inset-y-[0] my-auto right-[0] w-[23px]"
                   src="images/img_iconrelume.svg"
                   alt="folder"
                 />
@@ -119,7 +119,7 @@ const HomeColumniconrelume: React.FC<HomeColumniconrelumeProps> = (props) => {
                 size="md"
                 variant="fill"
               >
-                {props?.buttonlabel1}
+                {props?.actionbutton1}
               </Button>
               <div className="flex flex-row gap-[7.68px] items-center justify-center rounded-[9px] shadow-bs3 w-auto">
                 <Text
@@ -129,14 +129,14 @@ const HomeColumniconrelume: React.FC<HomeColumniconrelumeProps> = (props) => {
                   {props?.buttonone1}
                 </Text>
                 <Img
-                  className="h-[23px] hidden w-[23px]"
+                  className="h-[23px] w-[23px]"
                   src="images/img_iconrelume.svg"
                   alt="folder"
                 />
               </div>
             </div>
           </div>
-          <div className="flex flex-1 flex-col gap-[30px] h-[451px] md:h-auto md:hidden items-center justify-between p-2.5 w-full">
+          <div className="flex flex-1 flex-col gap-[30px] h-[451px] md:h-auto items-center justify-between p-2.5 w-full">
             <div className="flex flex-col gap-[23.05px] items-center justify-start w-full">
               <Img
                 className="h-[46px] w-[46px]"
@@ -166,7 +166,7 @@ const HomeColumniconrelume: React.FC<HomeColumniconrelumeProps> = (props) => {
                 size="md"
                 variant="fill"
               >
-                {props?.buttonlabel2}
+                {props?.actionbutton2}
               </Button>
               <div className="h-[23px] relative w-[76px]">
                 <div className="absolute flex flex-col h-full inset-[0] items-center justify-center m-auto rounded-[9px] shadow-bs3 w-auto">
@@ -178,7 +178,7 @@ const HomeColumniconrelume: React.FC<HomeColumniconrelumeProps> = (props) => {
                   </Text>
                 </div>
                 <Img
-                  className="absolute h-[23px] hidden inset-y-[0] my-auto right-[0] w-[23px]"
+                  className="absolute h-[23px] inset-y-[0] my-auto right-[0] w-[23px]"
                   src="images/img_iconrelume.svg"
                   alt="folder"
                 />
@@ -195,17 +195,17 @@ HomeColumniconrelume.defaultProps = {
   sectionheading: "Medium length section heading goes here",
   sectiondescription:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.",
-  buttonlabel: "Button",
-  buttonOne: "Button",
+  actionbutton: "Button",
+  buttonone: "Button",
   sectionheading1: "Medium length section heading goes here",
   sectiondescription1:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.",
-  buttonlabel1: "Button",
+  actionbutton1: "Button",
   buttonone1: "Button",
   sectionheading2: "Medium length section heading goes here",
   sectiondescription2:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.",
-  buttonlabel2: "Button",
+  actionbutton2: "Button",
   buttonone2: "Button",
 };
 

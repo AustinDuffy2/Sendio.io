@@ -94,7 +94,7 @@ const ContactContact27: React.FC<ContactContact27Props> = (props) => {
           </div>
           <div className="flex flex-1 flex-col gap-8 items-center justify-start w-full">
             <Img
-              className="md:h-auto object-cover w-full"
+              className="h-[500px] md:h-auto object-cover w-full"
               src="images/img_heroanimation.png"
               alt="heroanimation"
             />

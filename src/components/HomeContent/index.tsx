@@ -4,9 +4,9 @@ import { Button, Text } from "components";
 
 type HomeContentProps = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  "headingOne" | "textTwo" | "buttonlabel"
+  "headingone" | "texttwo" | "buttontext"
 > &
-  Partial<{ headingOne: string; textTwo: string; buttonlabel: string }>;
+  Partial<{ headingone: string; texttwo: string; buttontext: string }>;
 
 const HomeContent: React.FC<HomeContentProps> = (props) => {
   return (
@@ -17,13 +17,13 @@ const HomeContent: React.FC<HomeContentProps> = (props) => {
             className="md:text-3xl sm:text-[28px] text-[32px] text-black-900 text-center w-full"
             size="txtRobotoBold32"
           >
-            {props?.headingOne}
+            {props?.headingone}
           </Text>
           <Text
             className="text-black-900 text-center text-lg w-full"
             size="txtRobotoRegular18"
           >
-            {props?.textTwo}
+            {props?.texttwo}
           </Text>
         </div>
         <Button
@@ -33,7 +33,7 @@ const HomeContent: React.FC<HomeContentProps> = (props) => {
           size="md"
           variant="fill"
         >
-          {props?.buttonlabel}
+          {props?.buttontext}
         </Button>
       </div>
     </>
@@ -41,9 +41,9 @@ const HomeContent: React.FC<HomeContentProps> = (props) => {
 };
 
 HomeContent.defaultProps = {
-  headingOne: "Join Us!",
-  textTwo: "Exciting opportunities to be part of our team",
-  buttonlabel: "Button",
+  headingone: "Join Us!",
+  texttwo: "Exciting opportunities to be part of our team",
+  buttontext: "Button",
 };
 
 export default HomeContent;

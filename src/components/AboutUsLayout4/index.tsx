@@ -8,22 +8,22 @@ type AboutUsLayout4Props = Omit<
   | "heading"
   | "description"
   | "subheadingone"
-  | "text"
+  | "textone"
   | "subheadingtwo"
-  | "textOne"
-  | "learnmorelabel"
-  | "signupbuttontext"
+  | "texttwo"
+  | "learnmore"
+  | "buttontext"
 > &
   Partial<{
     subheading: string;
     heading: string;
     description: string;
     subheadingone: string;
-    text: string;
+    textone: string;
     subheadingtwo: string;
-    textOne: string;
-    learnmorelabel: string;
-    signupbuttontext: string;
+    texttwo: string;
+    learnmore: string;
+    buttontext: string;
   }>;
 
 const AboutUsLayout4: React.FC<AboutUsLayout4Props> = (props) => {
@@ -66,7 +66,7 @@ const AboutUsLayout4: React.FC<AboutUsLayout4Props> = (props) => {
                   className="leading-[150.00%] max-w-[312px] md:max-w-full text-base text-black-900"
                   size="txtRobotoRegular16"
                 >
-                  {props?.text}
+                  {props?.textone}
                 </Text>
               </div>
               <div className="flex flex-1 flex-col gap-4 items-start justify-start w-full">
@@ -80,7 +80,7 @@ const AboutUsLayout4: React.FC<AboutUsLayout4Props> = (props) => {
                   className="leading-[150.00%] max-w-[312px] md:max-w-full text-base text-black-900"
                   size="txtRobotoRegular16"
                 >
-                  {props?.textOne}
+                  {props?.texttwo}
                 </Text>
               </div>
             </div>
@@ -93,14 +93,14 @@ const AboutUsLayout4: React.FC<AboutUsLayout4Props> = (props) => {
               size="md"
               variant="fill"
             >
-              {props?.learnmorelabel}
+              {props?.learnmore}
             </Button>
             <div className="flex flex-row gap-2 items-center justify-center rounded-[10px] shadow-bs w-auto">
               <Text
                 className="text-base text-black-900 w-auto"
                 size="txtRobotoRegular16"
               >
-                {props?.signupbuttontext}
+                {props?.buttontext}
               </Text>
               <Img
                 className="h-6 w-6"
@@ -126,12 +126,13 @@ AboutUsLayout4.defaultProps = {
   description:
     "Our AI platform utilizes advanced technology to provide users with an effortless way to find the perfect property. With our powerful search capabilities, you can easily explore a wide range of commercial real estate, multi-family, industrial sites, and rental properties around the world.",
   subheadingone: "Efficient Search",
-  text: "Quickly find the properties that meet your specific criteria and preferences.",
+  textone:
+    "Quickly find the properties that meet your specific criteria and preferences.",
   subheadingtwo: "Smart Recommendations",
-  textOne:
+  texttwo:
     "Receive personalized property recommendations based on your search history and preferences.",
-  learnmorelabel: "Learn More",
-  signupbuttontext: "Sign Up",
+  learnmore: "Learn More",
+  buttontext: "Sign Up",
 };
 
 export default AboutUsLayout4;

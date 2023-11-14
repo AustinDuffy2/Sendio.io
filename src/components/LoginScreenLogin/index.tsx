@@ -13,10 +13,9 @@ type LoginScreenLoginProps = Omit<
   | "passwordtext"
   | "loginbuttontext"
   | "googlesignupbuttontext"
-  | "textOne"
   | "description"
+  | "textOne"
   | "textTwo"
-  | "textThree"
 > &
   Partial<{
     signuptext: string;
@@ -28,17 +27,16 @@ type LoginScreenLoginProps = Omit<
     passwordtext: string;
     loginbuttontext: string;
     googlesignupbuttontext: string;
-    textOne: string;
     description: JSX.Element | string;
+    textOne: string;
     textTwo: string;
-    textThree: string;
   }>;
 
 const LoginScreenLogin: React.FC<LoginScreenLoginProps> = (props) => {
   return (
     <>
       <div className={props.className}>
-        <div className="flex flex-1 flex-col md:gap-10 gap-32 items-center justify-start md:px-10 px-16 sm:px-5 w-full">
+        <div className="flex flex-1 flex-col items-center justify-start md:px-10 px-16 sm:px-5 w-full">
           <div className="flex flex-col gap-8 h-[754px] md:h-auto items-center justify-start pb-24 pt-2 w-full">
             <div className="flex sm:flex-col flex-row sm:gap-5 items-start justify-start w-full">
               <div className="flex flex-1 flex-col items-start justify-start w-full">
@@ -158,14 +156,6 @@ const LoginScreenLogin: React.FC<LoginScreenLoginProps> = (props) => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col h-[72px] md:h-auto items-center justify-start w-full">
-            <Text
-              className="text-base text-black-900 text-center w-auto"
-              size="txtRobotoRegular16"
-            >
-              {props?.textOne}
-            </Text>
-          </div>
         </div>
         <div className="flex flex-1 flex-col items-center justify-center md:px-10 px-16 sm:px-5 py-12 w-full">
           <div className="flex flex-col gap-8 items-center justify-start w-full">
@@ -192,13 +182,13 @@ const LoginScreenLogin: React.FC<LoginScreenLoginProps> = (props) => {
                     className="text-base text-black-900 w-auto"
                     size="txtRobotoSemiBold16"
                   >
-                    {props?.textTwo}
+                    {props?.textOne}
                   </Text>
                   <Text
                     className="text-base text-black-900 w-auto"
                     size="txtRobotoRegular16"
                   >
-                    {props?.textThree}
+                    {props?.textTwo}
                   </Text>
                 </div>
               </div>
@@ -241,7 +231,6 @@ LoginScreenLogin.defaultProps = {
   passwordtext: "Password*",
   loginbuttontext: "Login",
   googlesignupbuttontext: "Sign Up with Google",
-  textOne: "© 2022 Relume",
   description: (
     <>
       &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -249,8 +238,8 @@ LoginScreenLogin.defaultProps = {
       ornare, eros dolor interdum nulla.&quot;
     </>
   ),
-  textTwo: "Name Surname",
-  textThree: "Position, Company name",
+  textOne: "Name Surname",
+  textTwo: "Position, Company name",
 };
 
 export default LoginScreenLogin;
